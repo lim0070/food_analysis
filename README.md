@@ -126,6 +126,25 @@ In order to determine whether they come from the same distribution, we ran a per
 
 The p-value that we got is 0.114, which is larger than the 0.05 threshold. Therefore, we fail to reject the null hypothesis and that the missingness in the "rating" column isn't dependent on the "minutes" column. We can then conclude that the missingness in the "rating" column is MCAR as the missingness in "rating" isn't dependent on "minutes".
 
+### Checking Whether Missingness of Rating Depends on Steps
+Null hypothesis: The missingness of rating values is independent of the steps column (MCAR)
+Alternate hypothesis: The missingness of rating values is dependent of the steps column (MAR)
+Test Statistic: The difference in means between the distributions where the rating column has missing values and doesn't have missing values
+
+
+The distribution plots of the two distributions are listed below, where True represents that there are missing elements in the rating column and False represents that there aren’t any missing elements.
+
+
+<iframe src="assets/miss_rating_distribution.html" width=800 height=600 frameBorder=0></iframe>
+
+
+In order to determine whether they come from the same distribution, we ran a permutation test by shuffling the rating column 1000 times to get 1000 results of the test statistic to compare with the observed test statistic. Here is the distribution that we got from the permutation test.
+
+
+<iframe src="assets/permutation_test_MCAR.html" width=800 height=600 frameBorder=0></iframe>
+
+
+The p-value that we got is 0, which is smaller than the 0.05 threshold. Therefore, we reject the null hypothesis and that the missingness in the "rating" column is dependent on the steps column. We can then conclude that the missingness in the "rating" column is MAR as the missingness in "rating" is dependent on "steps".
 
 
 
@@ -143,8 +162,36 @@ pval chat
 
 
 
+
+
 The p value of the above stat is 0.0, which we can reject that the 
 
 
+
+
+### Checking Whether Missingness of Rating Depends on n_ingredients(hypo)
+
+We think that if the more ingredients is require by a single receipe, then people are less likely to make it, so there is less variation on receipes those receipe and the effect of a single bad rating would be more signicficant, so receipe have less ingredients tend to have higher average rating.
+
+We use np.qcut to cut the minutes to two groups, if the number of ingredients is less than 9, then it is defined as easy, else hard
+
+Null hypothesis: The missingness of rating values is independent of the minutes column (MCAR)
+Alternate hypothesis: The missingness of rating values is dependent of the minutes column (MAR)
+Test Statistic: The difference in means between the distributions where the rating column has missing values and doesn't have missing values
+
+
+The distribution plots of the two distributions are listed below, where True represents that there are missing elements in the rating column and False represents that there aren’t any missing elements.
+
+
+<iframe src="assets/miss_rating_distribution.html" width=800 height=600 frameBorder=0></iframe>
+
+
+In order to determine whether they come from the same distribution, we ran a permutation test by shuffling the rating column 1000 times to get 1000 results of the test statistic to compare with the observed test statistic. Here is the distribution that we got from the permutation test.
+
+
+<iframe src="assets/permutation_test_MCAR.html" width=800 height=600 frameBorder=0></iframe>
+
+
+The p-value that we got is 0.114, which is larger than the 0.05 threshold. Therefore, we fail to reject the null hypothesis and that the missingness in the "rating" column isn't dependent on the "minutes" column. We can then conclude that the missingness in the "rating" column is MCAR as the missingness in "rating" isn't dependent on "minutes".
 
 ---
