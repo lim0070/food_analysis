@@ -60,7 +60,7 @@ Given the ratings provided by every consumer of the recipes, it is logical to fi
 We made a histogram visualizing the distribution of average rating from the merged dataframe. According to the plot, it is right skewed, meaning that most of the average ratings lie in between 4.5 to 5.0, which means that most recipes on the dataset are pretty good or consumers are just being too lenient when rating the recipes.
 
 
-<iframe src="assets/uni_fig1.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/uni_fig1.html" onload="this.width=screen.widthheight=600 frameBorder=0></iframe>
 
 
 
@@ -164,30 +164,12 @@ The distribution plots of the two distributions are listed below, where True rep
 In order to determine whether they come from the same distribution, we ran a permutation test by shuffling the rating column 1000 times to get 1000 results of the test statistic to compare with the observed test statistic. Here is the distribution that we got from the permutation test.
 
 
-<iframe src="assets/permutation_test2_MAR.html" width=600 height=600 frameBorder=0></iframe>
+<iframe src="assets/permutation_test2_MAR.html" onload="this.width=screen.width height=600 frameBorder=0></iframe>
 
 
-The p-value that we got is 0, which is smaller than the 0.05 threshold. Therefore, we reject the null hypothesis and that the missingness in the "rating" column is dependent on the steps column. We can then conclude that the missingness in the "rating" column is MAR as the missingness in "rating" is dependent on "steps".
+The p-value that we got is 0, which is smaller than the 0.05 threshold. Therefore, we reject the null hypothesis and that the missingness in the "rating" column is dependent on the steps column. We can then conclude that the missingness in the"rating" column is MAR as the missingness in "rating" is dependent on "steps".
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The p value of the above stat is 0.0, which we can reject that the 
-
-
-
-### Hyptheis Test
+### Hypotheis Test
 
 The question we are going to research on is that: do receipe that have more ingredients would have different rating as those have less ingredients
 
