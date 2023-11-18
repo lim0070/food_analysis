@@ -32,10 +32,11 @@ In order to see which ratings the recipes correspond too, we have to merge the t
 ### Adding an average rating column to the merged dataframe
 Given the ratings provided by every consumer of the recipes, it is logical to find the average rating of each recipe to determine which recipe is better than the other. We realized that there are some ratings that has a value of 0 and this might happen because people just didn't fill this column in. Therefore, we decided the set all the values 0 to nan instead to show that the person didn't fill the rating in. We then assigned the newly calculated average ratings as a new column in the merged dataframe.
 
----
+
 ### Cleaned and Merged Dataframe
 
 Here is our cleaned data frame(and we display some of the impotant columns)
+
 
 |    | name                                 |   minutes |   n_steps |   n_ingredients |   average_rating |
 |---:|:-------------------------------------|----------:|----------:|----------------:|-----------------:|
@@ -45,7 +46,7 @@ Here is our cleaned data frame(and we display some of the impotant columns)
 |  3 | 412 broccoli casserole               |        40 |         6 |               9 |                5 |
 |  4 | 412 broccoli casserole               |        40 |         6 |               9 |                5 |
 
----
+
 
 ## Exploratory Data Analysis
 
