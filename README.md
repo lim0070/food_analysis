@@ -51,8 +51,7 @@ Here is our cleaned data frame(and we display some of the impotant columns)
 
 ### Univariate Analysis
 
-### Distribution of Average Rating
-
+#### Distribution of average Rating
 
 We made a histogram visualizing the distribution of average rating from the merged dataframe. According to the plot, it is right skewed, meaning that most of the average ratings lie in between 4.5 to 5.0, which means that most recipes on the dataset are pretty good or consumers are just being too lenient when rating the recipes.
 
