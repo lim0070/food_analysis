@@ -82,7 +82,7 @@ In the second graph, we want to discover the relation between the steps of recei
 <iframe src="assets/bi_fig2.html" width=600 height=400 frameBorder=0></iframe>
 
 From the plot, we can`t say there is a linear relation between the two variables, but receipes have more steps tend to have a larger variation of average rating among receipes with less steps.
----
+
 ### Interesting Aggregates
 
 In the aggregates analysis, we will study minutes on average rating
@@ -99,7 +99,9 @@ This is a pivot table of rating on minutes, it tells us about the range, mean an
 
 <iframe src="assets/agg_fig.html" width=600 height=400 frameBorder=0></iframe>
 ---
+
 ## Assessment of Missingness
+
 ### NMAR Analysis
 We believe the column that might be NMAR is "review" as there might be people who don’t have time to fill in the ratings survey so they only filled in the "rating" column as it takes less time. In order to make the column MAR, we should add an additional column that contains data about the time taken for the consumers to fill in the survey so that the missingness would be explained by another column in the dataframe.
 ---
@@ -107,7 +109,7 @@ We believe the column that might be NMAR is "review" as there might be people wh
 ### Missingness Dependency
 We conducted missingness dependency tests to find whether some of the missingness in one column depends on another column or not. We tested whether the missingness of the "rating" column depends on the columns "minutes" and "fill this in".
 
----
+
 ### Checking Whether Missingness of Rating Depends on Minutes
 Null hypothesis: The missingness of rating values is independent of the minutes column (MCAR)
 Alternate hypothesis: The missingness of rating values is dependent of the minutes column (MAR)
