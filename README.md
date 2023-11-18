@@ -70,14 +70,14 @@ We made a histogram visualizing the distribution of average rating from the merg
 We made another histogram visualizing the distribution of the time taken to make the food and we used the minutes column in the merged dataframe to do so. According to the plot, it is left skewed, meaning there is a small amount of cases where the dish takes so long to make and most dishes falls in the range in between 0 and 100 minutes.
 
 
-<iframe src="assets/uni_fig2.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/uni_fig2.html" width=600 height=600 frameBorder=0></iframe>
 
 ### Bivariate Analysis
 
 We believe calories do have an association between calories and rating of the recipe, so we did bivariate analysis on those two variable
 
 
-<iframe src="assets/bi_fig1.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/bi_fig1.html" width=600 height=600 frameBorder=0></iframe>
 
 When we plot the calories on x axis and y on average rating, there maybe a weak positive linear relation between two variable, but higher calories tend to have higher average rating on average, so it is not assciate linearlly, but there is possitive association between two variable
 
@@ -121,13 +121,13 @@ Test Statistic: The difference in means between the distributions where the rati
 The distribution plots of the two distributions are listed below, where True represents that there are missing elements in the rating column and False represents that there aren’t any missing elements.
 
 
-<iframe src="assets/miss_rating_distribution.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/miss_rating_distribution.html" width=600 height=600 frameBorder=0></iframe>
 
 
 In order to determine whether they come from the same distribution, we ran a permutation test by shuffling the rating column 1000 times to get 1000 results of the test statistic to compare with the observed test statistic. Here is the distribution that we got from the permutation test.
 
 
-<iframe src="assets/permutation_test_MCAR.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/permutation_test_MCAR.html" width=600 height=600 frameBorder=0></iframe>
 
 
 The p-value that we got is 0.114, which is larger than the 0.05 threshold. Therefore, we fail to reject the null hypothesis and that the missingness in the "rating" column isn't dependent on the "minutes" column. We can then conclude that the missingness in the "rating" column is MCAR as the missingness in "rating" isn't dependent on "minutes".
@@ -157,14 +157,14 @@ Test Statistic: The difference in means between the distributions where the rati
 
 The distribution plots of the two distributions are listed below, where True represents that there are missing elements in the rating column and False represents that there aren’t any missing elements.
 
-@fill this plot
-<iframe src="assets/miss_rating2_distribution.html" width=800 height=600 frameBorder=0></iframe>
+
+<iframe src="assets/miss_rating2_distribution.html" width=600 height=600 frameBorder=0></iframe>
 
 
 In order to determine whether they come from the same distribution, we ran a permutation test by shuffling the rating column 1000 times to get 1000 results of the test statistic to compare with the observed test statistic. Here is the distribution that we got from the permutation test.
 
 
-<iframe src="assets/permutation_test2_MAR.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/permutation_test2_MAR.html" width=600 height=600 frameBorder=0></iframe>
 
 
 The p-value that we got is 0, which is smaller than the 0.05 threshold. Therefore, we reject the null hypothesis and that the missingness in the "rating" column is dependent on the steps column. We can then conclude that the missingness in the "rating" column is MAR as the missingness in "rating" is dependent on "steps".
