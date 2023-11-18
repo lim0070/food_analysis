@@ -191,6 +191,7 @@ Test Statistic: The receipe with less ingredient have higher average rating sinc
 We perform one side test because we think easier receipe tend to have better rating
 
 here is the different between two group
+
 | difficult   |    mean |
 |:------------|--------:|
 | easy        | 4.67743 |
