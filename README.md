@@ -32,9 +32,19 @@ From the plot, we can`t say there is a linear relation between the two variables
 
 ## Interesting Aggregates
 
-In the aggregates analysis, we will study the 
-'<table border="1" class="dataframe">\n  <thead>\n    <tr style="text-align: right;">\n      <th></th>\n      <th>mean</th>\n      <th>max</th>\n      <th>min</th>\n      <th>median</th>\n    </tr>\n    <tr>\n      <th>minutes</th>\n      <th></th>\n      <th></th>\n      <th></th>\n      <th></th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>5.000000</td>\n      <td>5.0</td>\n      <td>5.0</td>\n      <td>5.000000</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>4.785655</td>\n      <td>5.0</td>\n      <td>1.0</td>\n      <td>5.000000</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>4.756842</td>\n      <td>5.0</td>\n      <td>1.0</td>\n      <td>4.947368</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>4.733029</td>\n      <td>5.0</td>\n      <td>1.0</td>\n      <td>4.857143</td>\n    </tr>\n    <tr>\n      <th>4</th>\n      <td>4.579813</td>\n      <td>5.0</td>\n      <td>1.0</td>\n      <td>4.750000</td>\n    </tr>\n  </tbody>\n</table>'
+In the aggregates analysis, we will study minutes on average rating
 
+|    mean |   max |   min |   median |
+|--------:|------:|------:|---------:|
+| 5       |     5 |     5 |  5       |
+| 4.78565 |     5 |     1 |  5       |
+| 4.75684 |     5 |     1 |  4.94737 |
+| 4.73303 |     5 |     1 |  4.85714 |
+| 4.57981 |     5 |     1 |  4.75    |
+
+This is a pivot table of rating on minutes, it tells us about the range, mean and the median of the data, below is the box plot of the rating of first 5 mins
+
+<iframe src="assets/agg_fig.html" width=600 height=600 frameBorder=0></iframe>
 
 
 
