@@ -1,17 +1,39 @@
 
+
 ---
 
-## Overview
 
-Welcome to Project 3! 👋
+# Research on Food Recipes and Ratings
+Made by Brighton Chan and Lincoln Ma
 
-This project contains no new material. Rather, it's a good opportunity to sharpen your understanding of the core concepts of the first half of the course. It'll also give you practice with creating visualizations and websites, and will give you something concrete to put on your resume and show to potential employers!
 
-The project is broken into two parts:
-- Part 1: An **analysis**, submitted as a Jupyter Notebook. This will contain the details of your work. **Focus on completing your analysis before moving to Part 2, as the analysis is the bulk of the project.**
-- Part 2: A **report**, submitted as a website. This will contain a narrative "story" with visuals. **Focus on this after finishing _most_ of your analysis.**
+## Introduction
+We consume food not only because they give us energy, we also eat food because they taste good. Therefore, restaurants needs reviews and ratings from their consumers so that they know how to improve their recipes. In this project, we hope to see whether the number of ingredients used in the recipe tend to receieve a higher average rating.
 
-{: .warning }
-**The project is due on Thursday, May 18th at 11:59PM**. While there is no checkpoint, we encourage you to finish Part 1 by Monday, May 15th, to leave yourself three days to review your analysis and prepare your report.<br><br>Like other projects, you're welcome to work with a partner, though if you do, you must **both** work on all pieces together, simultaneously. You will only submit one notebook and create one website.
+
+The dataset that we collected is from food.com. There are two dataframes that we used, a dataframe with all the recipes and another one with the ratings. In the recipes dataframe, there are 83,782 rows and 12 columns. Some of the relevant columns in the recipe dataframe are id, ingredients, n_ingredients. In the ratings dataframe, there are 731,927 rows and 5 columns. Some of the relevant columns in the ratings dataframe are recipe_id and rating. We are going to merge the two dataframes using the id column of the recipe dataframe and recipe_id column of the ratings dataframe. We are going to conduct a permutation test on the n_ingredients and rating columns to see whether they come from the same distribution to determine whether the number of ingredients used in a recipe affects the average rating.
+---
+
+
+
+---
+
+## Bivariate Analysis
+
+We believe calories do have an association between calories and rating of the recipe, so we did bivariate analysis on those two variable
+
+
+graph
+
+When we plot the calories on x axis and y on average rating, there maybe a weak positive linear relation between two variable, but higher calories tend to have higher average rating on average, so it is not assciate linearlly, but there is possitive association between two variable
+
+In the second graph, we want to discover the relation between the steps of receipe between the average rating, so we use a line plot the find the relation between steps and rating.
+
+graph
+
+In the plot, we can`t
+
+
+
 
 ---
