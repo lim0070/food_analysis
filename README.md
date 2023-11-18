@@ -34,13 +34,13 @@ Given the ratings provided by every consumer of the recipes, it is logical to fi
 
 ---
 ### Cleaned and Merged Dataframe
-| name                                 |     id |   minutes | nutrition                                                        |   n_ingredients |   rating |
-|:-------------------------------------|-------:|----------:|:-----------------------------------------------------------------|----------------:|---------:|
-| 1 brownies in the world    best ever | 333281 |        40 | ['138.4', ' 10.0', ' 50.0', ' 3.0', ' 3.0', ' 19.0', ' 6.0']     |               9 |        4 |
-| 1 in canada chocolate chip cookies   | 453467 |        45 | ['595.1', ' 46.0', ' 211.0', ' 22.0', ' 13.0', ' 51.0', ' 26.0'] |              11 |        5 |
-| 412 broccoli casserole               | 306168 |        40 | ['194.8', ' 20.0', ' 6.0', ' 32.0', ' 22.0', ' 36.0', ' 3.0']    |               9 |        5 |
-| 412 broccoli casserole               | 306168 |        40 | ['194.8', ' 20.0', ' 6.0', ' 32.0', ' 22.0', ' 36.0', ' 3.0']    |               9 |        5 |
-| 412 broccoli casserole               | 306168 |        40 | ['194.8', ' 20.0', ' 6.0', ' 32.0', ' 22.0', ' 36.0', ' 3.0']    |               9 |        5 |
+|    | name                                 |   minutes |   n_steps |   n_ingredients |   average_rating |
+|---:|:-------------------------------------|----------:|----------:|----------------:|-----------------:|
+|  0 | 1 brownies in the world    best ever |        40 |        10 |               9 |                4 |
+|  1 | 1 in canada chocolate chip cookies   |        45 |        12 |              11 |                5 |
+|  2 | 412 broccoli casserole               |        40 |         6 |               9 |                5 |
+|  3 | 412 broccoli casserole               |        40 |         6 |               9 |                5 |
+|  4 | 412 broccoli casserole               |        40 |         6 |               9 |                5 |
 
 ---
 
