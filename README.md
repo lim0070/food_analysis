@@ -194,11 +194,12 @@ here is the different between two group
 The observed stat was 0.0021929539853315916
 
 ## Permutation Test
+
 <iframe src="assets/permutation_test.html" width=600 height=400 frameBorder=0></iframe>
 
 We use permutation test to shuffle the missingless of rating 1000 times and get the absolute different between the original dataset and the shuffled dataframe. we use a one sided 95% confidence level test (0.05) to determine the missingless.
 
 ## Hypothesis Test conclusion
-The p-value that we got is 0.148, which is larger than the 0.05 threshold. Therefore, we fail to reject the null hypothesis and receipe with more or less ingredients is rated under the same scale. It may happen because the number of ingredients does not totally represent the complexity of a receipe, like some of the receipe require lots of spices, but people may just blend them and cook in a pot, so we should find a better definition of difficulty and find out how rating is affected
+The p-value that we got is 0.148, which is larger than the 0.05 threshold. Therefore, we fail to reject the null hypothesis and receipe with more or less ingredients is rated under the same scale. It may happen because the number of ingredients does not totally represent the complexity of a receipe, like some of the receipe require lots of spices, but people may just blend them and cook in a pot, so we should find a better definition of difficulty and find out the true effect of difficulty on rating
 
 ---
