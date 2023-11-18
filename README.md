@@ -14,20 +14,24 @@ We consume food not only because they give us energy, we also eat food because t
 
 
 The dataset that we collected is from food.com. There are two dataframes that we used, a dataframe with all the recipes and another one with the ratings. In the recipes dataframe, there are 83,782 rows and 12 columns. Some of the relevant columns in the recipe dataframe are id, ingredients, n_ingredients. In the ratings dataframe, there are 731,927 rows and 5 columns. Some of the relevant columns in the ratings dataframe are recipe_id and rating. We are going to merge the two dataframes using the id column of the recipe dataframe and recipe_id column of the ratings dataframe. We are going to conduct a permutation test on the n_ingredients and rating columns to see whether they come from the same distribution to determine whether the number of ingredients used in a recipe affects the average rating.
+
 ---
 
 ## Cleaning and EDA (Exploratory Data Analysis)
 ###Checking the types of data in the dataframes
 We realized that the columns tags, nutrition, steps, description, and ingredients are all string representations of a list, which means if we were to query for those elements we can't get the elements inside the list. Therefore, we changed the data type of those columns from string objects to lists.
 Specifically, we believe that all the elements in the list for the nutrition column are valuable information. Therefore, we assgined each of the elements in the nutrition list as an individual column in the dataframe, which are 'calories', 'total fat (PDV)', 'sugar (PDV)', 'sodium (PDV)', 'protein (PDV)', 'saturated fat (PDV)', and 'carbohydrates (PDV)' respectively, which each of the columns has a data type of float, which would be more convenient if we want to use these data for aggregation.
+
 ---
 
 ### Merging the Ratings and Recipes Dataframes Together
 In order to see which ratings the recipes correspond too, we have to merge the two dataframes together as the ratings dataframe only provides the "recipe_id" and not the other information that the recipes dataframe provides. To merge the two dataframes together, we merged them by the "recipe_id" column of the ratings dataframe and the "id" column of the recipes dataframe.
+
 ---
 
 ### Adding an average rating column to the merged dataframe
 Given the ratings provided by every consumer of the recipes, it is logical to find the average rating of each recipe to determine which recipe is better than the other. We realized that there are some ratings that has a value of 0 and this might happen because people just didn't fill this column in. Therefore, we decided the set all the values 0 to nan instead to show that the person didn't fill the rating in. We then assigned the newly calculated average ratings as a new column in the merged dataframe.
+
 ---
 ### Cleaned and Merged Dataframe
 | name                                 |     id |   minutes | nutrition                                                        |   n_ingredients |   rating |
@@ -37,6 +41,7 @@ Given the ratings provided by every consumer of the recipes, it is logical to fi
 | 412 broccoli casserole               | 306168 |        40 | ['194.8', ' 20.0', ' 6.0', ' 32.0', ' 22.0', ' 36.0', ' 3.0']    |               9 |        5 |
 | 412 broccoli casserole               | 306168 |        40 | ['194.8', ' 20.0', ' 6.0', ' 32.0', ' 22.0', ' 36.0', ' 3.0']    |               9 |        5 |
 | 412 broccoli casserole               | 306168 |        40 | ['194.8', ' 20.0', ' 6.0', ' 32.0', ' 22.0', ' 36.0', ' 3.0']    |               9 |        5 |
+
 ---
 
 ## Exploratory Data Analysis
